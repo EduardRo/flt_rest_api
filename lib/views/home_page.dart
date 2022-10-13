@@ -41,7 +41,10 @@ class _HomePageState extends State<HomePage> {
         child: ListView.builder(
           itemCount: posts?.length,
           itemBuilder: (context, index) {
-            return Text(posts![index].title);
+            return Expanded(
+                child: Column(
+              children: [Text(posts![index].title), Text(posts![index].body)],
+            ));
           },
         ),
         replacement: const Center(
