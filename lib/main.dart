@@ -1,5 +1,6 @@
-import 'package:flt_rest_api/views/home_page.dart';
-import 'package:flt_rest_api/views/table.dart';
+//import 'package:flt_rest_api/views/home_page.dart';
+import 'package:flt_rest_api/views/matematicon_page.dart';
+//import 'package:flt_rest_api/views/table.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyTableWidget(),
+      home: const MatematiconPage(),
+      //const MyTableWidget(),
       //HomePage(),
     );
   }
